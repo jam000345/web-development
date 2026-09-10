@@ -1,5 +1,14 @@
 header {
   text-align: center;
+  color: white;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
 }
 
 nav {
@@ -9,10 +18,27 @@ nav {
   justify-content: center;
 }
 
-.resumeLink, .coverLink, .careerLink {
+nav div, nav button {
   padding: 10px;
   border: solid;
+  background-color:white;
 }
-.resumeLink{
-  border-left-width: thick;
+
+button {
+  padding: 0px;
+  border: none;
+  background-color:white;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+  float: bottom;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.contact {
+  color: blue;
 }
