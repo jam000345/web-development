@@ -1,5 +1,6 @@
-header {
+* {
   text-align: center;
+  font-family: serif;
   color: white;
 }
 
@@ -12,33 +13,65 @@ body {
 }
 
 nav {
-  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: black;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav div, nav button {
   padding: 10px;
   border: solid;
-  background-color:white;
 }
 
 button {
+  font: inherit;
   padding: 0px;
   border: none;
-  background-color:white;
+  background-color:rgb(32, 32, 32);
+  cursor: pointer;
+}
+
+H3 {
+  text-decoration: underline;
+}
+
+.contact {
+  color: lightblue;
+}
+
+table {
+  width: 100%;
+  border:solid;
+  border-color: white;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  width: 25%;
+  border: solid;
+}
+
+tr:first-child * {
+  text-decoration: underline;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+}
+
+li {
+  text-align: left;
 }
 
 footer {
-  text-align: center;
-  font-size: small;
-  float: bottom;
-  position: absolute;
   width: 100%;
   bottom: 0;
 }
 
-.contact {
-  color: blue;
-}
