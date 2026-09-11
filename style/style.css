@@ -60,14 +60,38 @@ tr:first-child * {
   text-decoration: underline;
 }
 
-.flex {
+.grid {
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 1;
+  grid-gap: 10px;
+}
+
+.edu {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.skills {
+  grid-column: 2;
+  grid-row: 1;6
+}
+
+li {
+  text-align: center;
+  list-style-type: square;
+  list-style-position: inside;
 }
 
 li {
   text-align: left;
+}
+
+hr {
+  border: none;
+  background-color: white;
+  height: 1px;
+  margin-top: 20px;
 }
 
 footer {
@@ -75,3 +99,14 @@ footer {
   bottom: 0;
 }
 
+.mtxt {
+  color: black;
+}
+
+.college {
+  text-decoration: underline;
+}
+
+.coverLetter * {
+  text-align: left;
+}
