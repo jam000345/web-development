@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang='en-US'>
   <head>
-    <meta charset="utf-8">
-    <link rel='stylesheet' href='.\style\style.css'>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='style/style.css'>
     <title>Perkins's Cover Letter</title>
   </head>
   <body>
@@ -11,23 +11,28 @@
       <div class=resumeLink><a href='resume.html'>Resume</a></div>
       <div class=coverLink><a href='cover-letter.html'>Cover Letter</a></div>
       <div class=careerLink><a href='career-goals.html'>Career Goals</a></div>
-      <div><!--for current time using javascript --></div>
-      <button id='console-message' onclick=''>Console Message</button> <!-- add Javascript -->
+      <div id='currentDate'>
+      <script>
+        const now = new Date();
+        document.getElementById('currentDate').textContent = now.toLocaleDateString();
+      </script>
+      </div>
+      <button id='consoleMessage' onclick="console.log('Perkins\'s Portfolio')">Console Message</button> 
     </nav>
     <main>
       <article>
         <section class='coverLetter'>
           <p>Dear Hiring Manager,</p>
-          <p>I was looking on Indeed and saw the <Strong>System Administrator</Strong> Position and thought with my Navy IT. Experience that I would be a great fit for this job. Working on USS Paul Ignatius I had hands on experience maintaining C2 Systems to include <mark class='mtxt'>GCCS-M and 3 Citrixs</mark> running on virtual machines on <mark class='mtxt'>Vmware</mark>. During my time on board I was in-charge of daily backups of all servers and maintenance on 17 server racks. I also supported LAN migrations and the rebuild of multiple core servers to include GCCS-M. On top of server maintenance I was also tasked with trouble tickets from <em>hardware problems, software problems, accounts and services problems.</em> In total I have four years of Navy system administration experience and currently working to complete my <span class='college'>bachelor in computer science.</span></p>
-          <p>The <strong>System administrator</strong> is the next step in my corer. I think an interview to demonstrate my knowledge and skills will show that I am the right candidate for the job. Thank you for taking time out of your day to review my application.</p>
-          <p>Vary Respectfully,<br>Perkins, James A.</p>
+          <p>I was looking on Indeed and saw the <Strong>System Administrator</Strong> Position and thought that, with my Navy IT Experience that, I would be a great fit for this job. Working on USS Paul Ignatius, I had hands-on experience maintaining C2 systems, including <mark class='mtxt'>GCCS-M and 3 Citrixs</mark> I was looking on Indeed and saw the <mark class='mtxt'>VMware</mark>. During my time on board, I was in charge of daily backups of all servers and maintenance on 17 server racks. I also supported LAN migrations and the rebuild of multiple core servers, including GCCS-M. On top of server maintenance, I was also tasked with trouble tickets for <em>hardware, software, accounts, and application problems.</em> In total, I have 4 years of Navy system administration experience and am currently working to complete my <span class='college'>bachelor in computer science.</span></p>
+          <p>The <strong>System Administrator</strong> role is the next step in my career. I think an interview to demonstrate my knowledge and skills will show that I am the right candidate for the job. Thank you for taking the time out of your day to review my application.</p>
+          <p>Very Respectfully,<br>Perkins, James A.</p>
           <hr>
         </section>
       </article>
     </main>
     <footer> <!-- Content Organization 6/6 -->
       <p>Please contact me for more information or any questions you may have. 
-        <br>Email: <span class='contact'>Jperk2@wgui.edu</span>
+        <br>Email: <a href='mailto:jperk2@wgu.edu' class='contact'>Jperk2@wgui.edu</a>
         <br>Phone: <span class='contact'>(585) 732-2644</span>
       </p>
     </footer>

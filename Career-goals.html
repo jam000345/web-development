@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang='en-US'>
   <head>
-    <meta charset="utf-8">
-    <link rel='stylesheet' href='.\style\style.css'>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='style/style.css'>
     <title>Perkins's Career Goals</title>
   </head>
   <body>
@@ -11,17 +11,71 @@
       <div class=resumeLink><a href='resume.html'>Resume</a></div>
       <div class=coverLink><a href='cover-letter.html'>Cover Letter</a></div>
       <div class=careerLink><a href='career-goals.html'>Career Goals</a></div>
-      <div><!--for current time using javascript --></div>
-      <button id='console-message' onclick=''>Console Message</button> <!-- add Javascript -->
+      <div id='currentDate'>
+      <script>
+        const now = new Date();
+        document.getElementById('currentDate').textContent = now.toLocaleDateString();
+      </script>
+      </div>
+      <button id='consoleMessage' onclick="console.log('Perkins\'s Portfolio')">Console Message</button> <!-- add Javascript -->
     </nav>
     <main>
       <article>
-        <section></section>
+        <div class='grid'>
+          <section class='media'>
+            <h3>Thank You</h3>
+            <audio class='thxMsg' src='media/audio.mp3' Preload='auto' controls>Thank you for your time.</audio>
+            <img class='headshot' src='media/photo.jpg' alt='Headshot'>
+          </section>
+          <section class='careerForm'>
+            <form action='https://wp.zybooks.com/form-viewer.php'>
+              <label for='First Name'>First Name</label>
+              <input type='text' name='First Name' placeholder='Enter your first name' required>
+              <br>
+              <label for='Last Name'>Last Name</label>
+              <input type='text' name='Last Name' placeholder='Enter your last name' required>
+              <br>
+              <label for='Company'>Company</label>
+              <input type='text' name='Company' placeholder='Enter your company name'>
+              <br>
+              <label for='Email'>Email</label>
+              <input type='email' name='Email' placeholder='Enter your email' required>
+              <br>
+              <label for='Phone Number'>Phone Number</label>
+              <input type='tel' name='Phone Number' placeholder='Enter your phone number' required>
+              <br>  
+              <label for='Message'>Message</label>
+              <textarea name='Message' placeholder='Enter your message' required></textarea>
+              <br>
+              <label for='Best Contact Time'>Best Contact Time</label>
+              <div class='radioGroup'>
+                <input type=radio name='Best Contact Time' value='a.m.'>a.m.
+                <input type=radio name='Best Contact Time' value='p.m.'>p.m.
+                <input type=radio name='Best Contact Time' value='anytime'>anytime
+              </div>
+              <br>
+              <label for='Best Contact Method'>Best Contact Method</label>
+              <select name='Best Contact Method'>
+                <option value='email'>email</option>
+                <option value='phone'>phone</option>
+                <option value='text'>text</option>
+              </select>
+              <br>
+              <input type='submit' value='Submit'>
+            </form>
+          </section>
+        </div>
+        <hr>
+        <section>
+          <h3>Video</h3>
+          <p>Here is a video of the northern lights that i took during one of my deploments of the cost of Norway.</p>
+          <video src='media/video.mp4' preload='auto' controls></video>
+        </section>
       </article>
     </main>
     <footer> <!-- Content Organization 6/6 -->
       <p>Please contact me for more information or any questions you may have. 
-        <br>Email: <span class='contact'>Jperk2@wgui.edu</span>
+        <br>Email: <a href='mailto:jperk2@wgu.edu' class='contact'>Jperk2@wgui.edu</a>
         <br>Phone: <span class='contact'>(585) 732-2644</span>
       </p>
     </footer>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-US"> <!-- basic element 1/4 -->
+<html lang='en-US'> <!-- basic element 1/4 -->
   <head> <!-- basic element 2/4 -->
-    <meta charset="utf-8">
-    <link rel='stylesheet' href='.\style\style.css'>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='style/style.css'>
     <title>Perkins's Resume</title> <!-- basic element 3/4 -->
   </head>
   <body> <!-- basic element 4/4 -->
@@ -11,18 +11,23 @@
       <div class=resumeLink><a href='resume.html'>Resume</a></div>
       <div class=coverLink><a href='cover-letter.html'>Cover Letter</a></div>
       <div class=careerLink><a href='career-goals.html'>Career Goals</a></div>
-      <div><!--for current time using javascript --></div>
-      <button id='console-message' onclick=''>Console Message</button> <!-- add Javascript -->
+      <div id='currentDate'>
+      <script>
+        const now = new Date();
+        document.getElementById('currentDate').textContent = now.toLocaleDateString();
+      </script>
+      </div>
+      <button id='consoleMessage' onclick="console.log('Perkins\'s Portfolio')">Console Message</button> <!-- add Javascript -->
     </nav>
     <main> <!-- Content Organization 3/6 -->
       <article> <!-- Content Organization 4/6 -->
         <section>
           <h2>Perkins, James A.</h2>
-          <p>Address: 917 Page Ct. Chesapeake, VA. 23323 <br>Phone: <span class='contact'>(585) 7332-2644</span> <br> Email: <span clas='contact'> Jperk2@wgu.edu</span></p>
+          <p>Address: 917 Page Ct. Chesapeake, VA 23323 <br>Phone: <span class='contact'>(585) 7332-2644</span> <br> Email: <a href='mailto:jperk2@wgu.edu' class='contact'>Jperk2@wgui.edu</a></p>
         </section>
         <section> <!-- Content Organization 5/6 -->
-          <h3>EXPERIENCE</h3>
           <table>
+            <caption>Work Experience</caption>
             <tr>
               <th>Date</th>
               <th>Company</th>
@@ -32,27 +37,27 @@
             <tr>
               <td>FEB. 2018 - SEP 2020</td>
               <td> <strong>AMR</strong> <br> 811 West Ave. Rochester NY 14611 <br> Phone: <span class='contact'> (585) 777-7777</span></td>
-              <td> Emergincy Medical Tecknition</td>
-              <td> Respond to 911 calls and provide emergency care and transpertation to medical facilites.</td>
+              <td> Emergency Medical Technician</td>
+              <td> Respond to 911 calls and provide emergency care and transportation to medical facilities.</td>
             </tr>
             <tr>
               <td>JUL. 2020 - MAR. 2025 </td>
               <td> <strong>US Navy USS Paul Ignatius</strong> <br> Unit 100350 Box 1 FPO AE 09583 <br>Phone:<span class='contact'>(757) 443-7777</span></td>
               <td>System Administrator</td>
-              <td> To manage and mantain 30 Servers over five differnt networks. I also was responsable for managing ADUC for 300 users and 140 assets.</td>
+              <td>Manage and maintained 30 servers across five different networks. I was responsible for managing ADUC for 300 users and 140 assets.</td>
             </tr>
             <tr>
               <td> MAR. 2025 - Current</td>
-              <td> <strong>US Navy SMWDC DET LTLC</strong> <br> 2200 Amphibious Dr. Virginia Beach, VA. 23455 <br>Phone:<span class=contact>(757) 462-1484</span></td>
-              <td> Infermation System Security Officer</td>
-              <td> Maintane 120 assets over 2 networks and provide NMCI support for 75 users.</td>
+              <td> <strong>US Navy SMWDC DET LTLC</strong> <br> 2200 Amphibious Dr., Virginia Beach, VA 23455 <br>Phone:<span class=contact>(757) 462-1484</span></td>
+              <td> Information System Security Officer</td>
+              <td> Maintain 120 assets over 2 networks and provide NMCI support for 75 users.</td>
             </tr>
           </table>
         </section>
         <div class='grid'>
           <section class='edu'>
             <h3> Education</h3>
-            <h4>Western Govenors University</h4> <p>Degree: ComputerScience <br>Dates: JUN 2026 - Current</p>          
+            <h4>Western Governors University</h4> <p>Degree: Computer Science <br>Dates: JUN 2026 - Current</p>          
           </section>
           <section class='skills'>
             <h3> Skills</h3>
@@ -60,24 +65,24 @@
               <li>SQL</li>
               <li>ADUC</li>
               <li>CCNA</li>
+              <li>Security+</li>
               <li>Linux</li>
               <li>Windows Support</li>
               <li>Managment of I.T. Staff</li>
             </ul>
           </section>
-        </div>
-        <section>
+        <section class='awards'>
           <h3>Awards</h3>
-          <p><em>Navy And Meriancore Achivment Metal</em>- 2021<br> Recived for manting comunication systems on bourd USS Paul Ignatius running in artic cunditions leading to low system down time during the deration of the fist putrol in the Erapean theater.</p>
-          <P><em>Navy And Meriancore Achivment Metal</em>- 2023<br> Recived for takingover the roll  as Lead Comsec Acount Manager on bourd USS Paul Ignatius and takeing responsibilty for 467 Comsec line items critical for Mission segsess. </P>
-          <p><em>Navy And Meriancore Achivment Metal</em>- 2025<br> Recived for Passing the Comsec Acount CORE audit with no Comsec Insidents or PIIs Leading to a overall Score of Outstanding. By passing the audit, made sure the Comsec acount could remain open and operational.</p>
-          <hr>
+          <p><em>Navy And Maine Corps Achievement Medal</em>- 2021<br> Received for maintaining communication systems on board USS Paul Ignatius running in Arctic conditions, leading to low system downtime during the duration of the first patrol in the European theater.</p>
+          <P><em>Navy And Maine Corps Achievement Medal</em>- 2023<br> Received for taking over the role as Lead Comsec Account Manager on board USS Paul Ignatius and taking responsibility for 467 Comsec line items critical for Mission success.</P>
+          <p><em>Navy And Maine Corps Achievement Medal</em>- 2025<br> Received for passing the Comsec Account CORE audit with no Comsec Incident or PDSs, leading to an overall Score of Outstanding. By passing the audit, made sure the Comsec account could remain open and operational.</p>
         </section>
       </article>
     </main>
     <footer> <!-- Content Organization 6/6 -->
+      <hr>
       <p>Please contact me for more information or any questions you may have. 
-        <br>Email: <span class='contact'>Jperk2@wgui.edu</span>
+        <br>Email: <a href='mailto:jperk2@wgu.edu' class='contact'>Jperk2@wgui.edu</a>
         <br>Phone: <span class='contact'>(585) 732-2644</span>
       </p>
     </footer>
