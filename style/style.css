@@ -1,15 +1,17 @@
+/* css selector 1/6*/
 * {
   text-align: center;
-  font-family: serif;
-  color: white;
+  font-family: serif; /* property 1/8*/
+  color: white; /* property 2/8*/
 }
 
+/* css selector 2/6*/
 body {
-  background-color: rgb(32, 32, 32);
-  margin: 0;
-  padding: 0;
+  background-color: rgb(32, 32, 32); /* property 3/8*/
+  margin: 0; /* property 4/8*/
+  padding: 0; /* property 5/8*/
   position: relative;
-  font-style: normal;
+  font-style: normal;/* property 6/8*/
 }
 
 nav {
@@ -23,11 +25,13 @@ a {
   text-decoration: none;
 }
 
+/* css selector 3/6*/
 nav div, nav button {
   padding: 10px;
-  border: solid;
+  border: solid;/* property 7/8*/
 }
 
+/* css selector 4/6*/
 #consoleMessage {
   font: inherit;
   padding: 0px;
@@ -40,6 +44,7 @@ H3 {
   text-decoration: underline;
 }
 
+/* css selector 5/6*/
 .contact {
   color: lightblue;
 }
@@ -56,6 +61,7 @@ table th, table td {
   border: solid;
 }
 
+/* css selector 6/6*/
 tr:first-child * {
   text-decoration: underline;
 }
@@ -86,7 +92,7 @@ tr:first-child * {
 
 li {
   text-align: center;
-  list-style-type: square;
+  list-style-type: square;/* property 8/8*/
   list-style-position: inside;
 }
 
@@ -194,4 +200,5 @@ label {
 
 input, textarea, select, option{
   color: black;
+  background-color: white;
 }
